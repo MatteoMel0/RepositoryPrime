@@ -1,12 +1,105 @@
 <!DOCTYPE html>
 
+<!--Matteo Melini-->
+
 <html>
     <!--Questo è l'head-->
     <head>
         <!--Questi sono i metadati-->
         <meta charset="UTF-8" name="description" content="Pagina HTML">
     </head>
+    <!-- Questo è il body -->
     <body>
+        <!--Tabella con orari-->
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Lunedì</th>
+                    <th>Martedì</th>
+                    <th>Mercoledì</th>
+                    <th>Giovedì</th>
+                    <th>Venerdì</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8:00-9:00</td>
+                    <td rowspan="2">Matematica</td>
+                    <td>Inglese</td>
+                    <td rowspan="2">Italiano</td>
+                    <td>Scienze</td>
+                    <td rowspan="2">Ginnastica</td>
+                </tr>
+                <tr>
+                    <td>9:00-10:00</td>
+                    <!--Matematica-->
+                    <td>Fisica</td>
+                    <!--Italiano-->
+                    <td>Matematica</td>
+                    <!--Ginnastica-->
+                </tr>
+                <tr>
+                    <td>10:00-11:00</td>
+                    <td>Storia</td>
+                    <td>Religione</td>
+                    <td>Fisica</td>
+                    <td>Geografia</td>
+                    <td>Economia</td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+        <form>
+            <!--Inserimento username-->
+            <div>
+                <label for="user">Inserire username: </label>
+                <input type="text" name="username" id="user"><br><br>
+            </div>
+            <!--Inserimento password-->
+            <div>
+                <label for="pw">Inserire password:</label>
+                <input type="password" name="" id="pw"><br><br><br>
+            </div>
+            <!--Inserimento email-->
+            <div>
+                <label for="mail">Inserire email:</label>
+                <input type="email" name="" id="mail"><br><br><br>
+            </div>
+            <!--Controllo possesso patente-->
+            <div>
+                <label for="car">Hai la patente: </label>
+                <select name="patente" id="car">
+                    <option value="1">Sì</option>
+                    <option value="0">No</option>
+                </select>
+            </div><br><br><br>
+            
+            <!--Scelta genere-->
+            <div>
+                <p>Inserire il genere:</p><br>
+                <input type="radio" name="genere" value="m" id="maschio">
+                <label for="maschio">Maschio</label><br>
+                <input type="radio" name="genere" value="f" id="femmina">
+                <label for="femmina">Femmina</label><br>
+                <input type="radio" name="genere" value="0" id="gen">
+                <label for="gen">Preferisco non specificarlo</label>
+            </div><br><br><br>
+            
+            <!--Inserimento livello studi-->
 
+            <div>
+                <p>Inserisci il tuo livello di studi:</p><br>
+                <input type="checkbox" name="studyLv" value="1" id="medie">
+                <label for="medie">Diploma medie</label><br>
+                <input type="checkbox" name="studyLv" value="2" id="superiori">
+                <label for="superiori">Diploma superiori</label><br>
+                <input type="checkbox" name="studyLv" value="3" id="laurea">
+                <label for="laurea">Laurea</label>
+            </div><br><br><br>
+            <!--Pulsanti Invia e Cancella dati-->
+            <button type="submit">Invia</button>
+            <button type="reset">Annulla</button>
+        </form>
     </body>
 </html>
